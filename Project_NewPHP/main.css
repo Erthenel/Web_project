@@ -1,0 +1,370 @@
+@font-face {
+  font-family: 'Indie';
+  font-style: normal;
+  font-weight: 400;
+  src: url(indie_flower.woff) format('woff');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #ffffff; 
+    height:96.3vh;
+   width:99.55%;
+    min-width: 1090px;
+    background-image: url('Images/pic1.png');
+   background-attachment:fixed;
+}
+
+/*Шапка*/
+header.page_header {
+    position:fixed;
+    color:black;
+    background-color: #212026;
+    
+    width:100%;
+    min-width: 1000px;
+    padding-top: 5px;
+    padding-bottom:0px;
+    text-align: center;
+    box-shadow: 0 0 5px 0 #333;
+    z-index:4;
+}
+.main_menu ul {
+    margin-left: 0px;
+    margin-bottom:0px;
+    list-style: none;
+}
+.main_menu li {
+    display: inline-block;
+    margin-left:-5px;
+   color:white;
+    padding:15px;
+    font-size:20px;
+    border:1px solid #212026;
+    
+}
+.main_menu a {
+   
+    padding:5px;
+    text-decoration: none;
+     color:white;
+}
+
+.main_menu a{color:black;}
+.main_menu li:hover {
+    background-color:#B8B8BF;
+    font-size:20px;
+    color:black;
+    border:1px solid #212026;
+}
+/*Подстветка для JavaScript*/
+.active {
+    background-color:#B8B8BF;
+    font-size:20px;
+color:black;}
+
+.inactive{
+    background-color: #676673;
+   padding:15px;
+    color:aliceblue;}  
+/*Основная часть*/
+
+main {
+    display: block; 
+    position: relative;
+    top:10px;
+ width:900px;
+    left:10%;
+    overflow-x:scroll;  
+    min-height:90%;
+    color: black;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+    padding-bottom: 90px;
+   
+    box-shadow: 0 0 3px #383840;
+}
+
+article {
+    position: relative;
+    z-index: 1;
+    padding-left:20px; 
+    padding-bottom: 5px;
+    border-color:#B8B8BF;
+    border-width:5px;
+    border-radius: 20px;
+    border-style:solid solid;
+    border-left-color:#96969b;
+  border-top-color: #96969b;
+   
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.87);
+    background-color: #F2F2F2;
+    
+}
+
+hr{box-shadow:0 0 1px #c7bbbb; border:1px solid #7e7171;}
+.main_line{border:1px dashed black;box-shadow: none;width:100%;}
+.article_list{padding-left:50px;padding-right:50px;}
+/*Подвал*/
+.page_footer {
+    color:black;
+    background-color: #676673;
+    font-size: 14px;
+ width:100%;
+    height: 65px;
+    margin-top:10px;
+    right:0;
+    padding: 5px;
+   box-shadow: 0 0px 3px 0 #333;
+    z-index: 0;
+    position:relative;
+     
+     overflow: hidden
+}
+
+.page_footer .mail {
+    vertical-align: middle;
+    display:inline-block;
+    box-shadow: 0px 0 1px #F2F2F2;
+    border-radius: 5px;
+    
+    padding:5px;
+    margin-top:5px;
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+    background-color:#B8B8BF;
+}
+
+.page_footer .copyright {
+    
+    display:block;
+    padding-top:5px; 
+    color: #000000;
+    font-size: 12px;
+    font-family:Times New Roman, Times CY;
+}
+.page_footer .orient {
+text-align: center;
+}
+/**/
+.login_open{
+    position:absolute; color:#676673;right:100px;top:35px;text-decoration: none;cursor: pointer;
+}
+.login_open:hover{color:#F2F2F2;}
+.login_panel{
+    
+    position:absolute;
+border-bottom-left-radius: 20px;
+    box-shadow: 0 0 5px #333;
+    height:130px;
+    top:76px;
+    right:0px;
+    width:260px;
+    height: 180px;
+    background-color:#B8B8BF;
+    visibility:hidden;
+    padding:10px;
+
+}
+.login_panel2{
+    
+position:absolute;
+    top:65px;
+    right:102px;
+height:50px;
+width:50px;
+    visibility:hidden;
+    
+background-color:#B8B8BF;
+transform:rotate(45deg);
+z-index: 2;}
+
+.logform{
+    position: relative;
+  font-family: 'Comic Sans MS', cursive;
+    font-size: 14px;
+margin-top:10px;
+min-width:250px;
+z-index: 3;}
+
+label {font-size:18px;margin-left:-5px;}
+.loginrow{
+    width:60%;border: none;box-shadow: 0 0 1px black;height: 18px;margin-left:15px; padding-left:10px;
+}
+.loginrow:valid{background-color: rgb(243, 244, 230);}
+.reg_rows:valid{background-color: rgb(243, 244, 230);}
+input[type="submit"][value="Вход"] {     
+display: inline-block;
+    position:relative;
+    bottom:12px;
+    left:90px;
+   padding:10px; font-size:18px; font-family: sans-serif;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    background: #a3bcac;
+    box-shadow: 0 0 1px black;
+    color: #000000;
+}
+input[type="submit"][value="Выйти"] {     
+display: inline-block;
+    position:relative;
+    left:15px;
+    top:130px;
+   padding:10px; font-size:18px; font-family: sans-serif;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    background: #a3bcac;
+    box-shadow: 0 0 1px black;
+    color: #000000;
+}
+input[type="submit"][name="flip_"]{
+    display: inline-block;
+    position:relative;
+    left:5px;
+    top:130px;
+   padding:10px; font-size:18px; font-family: sans-serif;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background: #a3bcac;
+    box-shadow: 0 0 1px black;
+    color: #000000;}
+
+input[type="submit"][value="Отправить"] {     
+display: inline-block;
+    position:relative;
+    top:10px;
+  
+   padding:10px; font-size:18px; font-family: sans-serif;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background: #a3bcac;
+    box-shadow: 0 0 1px black;
+    color: #000000;
+}
+button[id="delete"]:hover,button[id="delete2"]:hover{
+    background-color:#ba3f3f;
+}
+a[id="read"]:hover{background-color:#718ddb;}
+input[type="submit"]:hover,button:hover{background-color:#57bc7b;}
+
+.logrem{position:relative;top:18px;right:45px; font-size:15px; }
+.reg_rows{
+    width:40%;border: none;box-shadow: 0 0 1px black;height: 30px;padding-left:10px;margin:10px 0;font-size: 14px;
+}
+form[id="addreg"]{text-align:center;}
+form[id="addreg"]>label{margin-top:200px;}
+.log_bottom>a:hover{color:#58586f; text-decoration: none;}
+.log_bottom>a{font-size:14px;color:black;}
+.user_options{
+    text-align:left;text-decoration:none;list-style: none; position:absolute;left:-30px;top:14px;
+}
+.user_options>li:hover{
+    text-decoration:underline;cursor:pointer;color:#e1eae2;
+}
+.edit{
+display: inline-block;
+    width: 200px;
+    position: relative;
+     top:-26px;left:60%;
+    margin-right:3px;
+    border: none;
+    border-radius: 5px;
+    background: #a3bcac;
+    box-shadow: 0 0 1px black;
+    color: #000000;  
+    padding:5px;
+     width: auto;
+    font-size:14px; font-family: sans-serif;
+   
+}
+.edit2{
+    margin-top: 5px;   
+    display: inline-block;
+    width: 200px;
+   cursor:pointer;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #a3bcac;
+    box-shadow: 0 0 1px black;
+    color: #000000;  
+    padding:5px;
+     width: auto;
+    font-size:14px; font-family: sans-serif;
+}
+span[id="delete"]:hover{background-color:#ba3f3f;}
+.edit2:hover{background-color:#57bc7b;}
+
+.readbt{
+ display: inline-block;
+    width: 200px;
+    text-decoration: none;
+    position: relative;
+     top:-25px;left:92%;;
+    margin-right:5px;
+    border: none;
+    border-radius: 5px;
+    background: #a3bcac;
+    box-shadow: 0 0 1px black;
+    color: #000000;  
+    padding:5px;
+     width: auto;
+    font-size:14px; font-family: sans-serif;   
+    
+}
+.popup{
+    position: relative;
+    top:30px;left:0px;
+font-size:15px; font-family: sans-serif;
+    width: 100px;
+}
+button{
+    display: inline-block;
+    position:absolute;
+      top:85px;
+    right:150px;
+   padding:10px; font-size:18px; font-family: sans-serif;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background: #a3bcac;
+    box-shadow: 0 0 1px black;
+    color: #000000;
+}
+h3{padding: 0px;margin:5px;}
+div[id="wrapbox"]{visibility: hidden;}
+.bb_bar{position: relative;left:5vh;}
+.bb_bar>a{
+    background-color: #d9ddce;
+    position:relative;
+    z-index: 2;
+    text-decoration: none;
+    padding:5px;
+    margin-left:-5px;
+    border:1px solid black;
+    font-size:18px;
+    
+}
+.bb_bar>a:hover{background-color: #ef861e;}
+.counter_number{
+    font-family: 'Indie Flower',cursive;
+    font-size:25px;border-radius:50px;
+cursor: pointer;
+    border:5px solid #96969b;
+    background-color:#B8B8BF;
+    padding-bottom:20px;
+    padding-left:10px;
+   border-bottom-left-radius: 0px;
+    position:relative;
+    z-index: 0;
+    box-shadow: 0px 0px 1px rgba(57, 13, 13, 0.87);
+    left:1px;
+}
+.counter_number:hover{background-color: #e1e1e6}
+textarea{resize: none;}

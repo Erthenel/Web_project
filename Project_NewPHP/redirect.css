@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #ffffff; 
+    height:97.7vh;
+   width:99.6%;
+   
+    background-image: url('Images/pic1.png');
+   background-attachment:fixed;
+}
+main {
+    display: block; 
+    position: relative;
+    top:10px;
+ width:80%;
+    left:10%;
+overflow: hidden;
+    min-height:90%;
+    color: black;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+    padding-bottom: 90px;
+    
+    box-shadow: 0 0 3px #383840;
+}
+
+article {
+    
+    padding-left:20px; 
+    padding-bottom: 5px;
+    border-color:#B8B8BF;
+    border-width:5px;
+    border-radius: 20px;
+    border-style:solid dotted;
+    
+}
+
+hr{box-shadow:0 0 1px #c7bbbb; border:1px solid #7e7171;}
+.main_line{border:1px dashed black;box-shadow: none;}
+.article_list{padding-left:50px;padding-right:50px;}

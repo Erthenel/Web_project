@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Indie';
+  font-style: normal;
+  font-weight: 400;
+  src: url(indie_flower.woff) format('woff');
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #ffffff; 
+    height:100%;
+    background-image: url('Images/pic1.png');
+   background-attachment:fixed;
+}
+
+/*Шапка*/
+header.page_header {
+    position:fixed;
+    color:black;
+    background-color: #212026;
+    
+    width:100%;
+    min-width: 1000px;
+    padding-top: 5px;
+    padding-bottom:0px;
+    text-align: center;
+    box-shadow: 0 0 5px 0 #333;
+    z-index: 1;
+}
+.main_menu ul {
+    margin-left: 0px;
+    margin-bottom:0px;
+    list-style: none;
+}
+.main_menu li {
+    display: inline-block;
+    margin-left:-5px;
+   color:white;
+    padding:15px;
+    font-size:20px;
+    border:1px solid #212026;
+    
+}
+.main_menu a {
+   
+    padding:5px;
+    text-decoration: none;
+     color:white;
+}
+
+.main_menu a{color:black;}
+.main_menu li:hover {
+    background-color:#B8B8BF;
+    font-size:20px;
+    color:black;
+    border:1px solid #212026;
+}
+/*Подстветка для JavaScript*/
+.active {
+    background-color:#B8B8BF;
+    font-size:20px;
+color:black;}
+
+.inactive{
+    background-color: #676673;
+   padding:15px;
+    color:aliceblue;}  
+/*Основная часть*/
+
+main {
+    display: block; 
+    position: relative;
+    top:10px;
+ width:80%;
+    left:10%;
+
+    min-height:90%;
+    color: black;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+    padding-bottom: 90px;
+    overflow: scroll;
+    box-shadow: 0 0 3px #383840;
+}
+
+article {
+    padding:5px;
+    border:1px solid black;}
+
+hr{box-shadow:0 0 1px #c7bbbb; border:1px solid #7e7171;}
+.main_line{border:1px dashed black;box-shadow: none;}
+.article_list{padding-left:50px;padding-right:50px;}
+/*Подвал*/
+.page_footer {
+    color:black;
+    background-color: #676673;
+    font-size: 14px;
+    width: 100%;
+ min-width: 1000px;
+    height: 75px;
+    margin-bottom:0px;
+    right:0;
+    padding: 5px;
+   box-shadow: 0 0px 3px 0 #333;
+    z-index: 1;
+    position:relative;
+     
+     overflow: hidden
+}
+
+.page_footer .mail {
+    vertical-align: middle;
+    display:inline-block;
+    box-shadow: 0px 0 1px #F2F2F2;
+    border-radius: 5px;
+    
+    padding:5px;
+    margin-top:5px;
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+    background-color:#B8B8BF;
+}
+
+.page_footer .copyright {
+    
+    display:block;
+    padding-top:5px; 
+    color: #000000;
+    font-size: 12px;
+    font-family:Times New Roman, Times CY;
+}
+.page_footer .orient {
+text-align: center;
+}
+/**/
+.login_open{position:absolute; color:#676673;right:100px;top:35px;text-decoration: none;cursor: pointer;}
+.login_open:hover{color:#F2F2F2;}
+.login_panel{
+    
+    position:absolute;
+border-bottom-left-radius: 20px;
+    box-shadow: 0 0 5px #333;
+    height:130px;
+    top:76px;
+    right:0px;
+    width:260px;
+    background-color:#B8B8BF;
+    visibility:hidden;
+    padding:10px;
+
+}
+.login_panel2{
+    
+position:absolute;
+    top:65px;
+    right:102px;
+height:50px;
+width:50px;
+    visibility:hidden;
+    
+background-color:#B8B8BF;
+transform:rotate(45deg);
+z-index: 2;}
+
+.logform{
+    position: relative;
+   
+margin-top:10px;
+max-width:250px;
+z-index: 3;}
+
+label {font-size:18px;margin-left:-5px;}
+.loginrow{width:60%;border: none;box-shadow: 0 0 1px black;height: 18px;margin-left:15px; padding-left:10px;}
+.loginrow:valid{background-color: rgb(243, 244, 230);}
+.reg_rows:valid{background-color: rgb(243, 244, 230);}
+input[type="submit"][value="Вход"] {     
+display: inline-block;
+    position:relative;
+    bottom:12px;
+    left:90px;
+   padding:10px; font-size:18px; font-family: sans-serif;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    background: #a3bcac;
+    box-shadow: 0 0 1px black;
+    color: #000000;
+}
+input[type="submit"][value="Отправить"] {     
+display: inline-block;
+    position:relative;
+    top:10px;
+  
+   padding:10px; font-size:18px; font-family: sans-serif;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background: #a3bcac;
+    box-shadow: 0 0 1px black;
+    color: #000000;
+}
+input[type="submit"]:hover{background-color:#57bc7b;}
+.logrem{position:relative;top:18px;right:45px; font-size:15px; }
+.reg_rows{width:40%;border: none;box-shadow: 0 0 1px black;height: 30px;padding-left:10px;margin:10px 0;font-size: 14px;}
+form[id="addreg"]{text-align:center;}
+form[id="addreg"]>label{margin-top:200px;}
+.log_bottom>a:hover{color:#58586f; text-decoration: none;}
+.log_bottom>a{font-size:14px;color:black;}
